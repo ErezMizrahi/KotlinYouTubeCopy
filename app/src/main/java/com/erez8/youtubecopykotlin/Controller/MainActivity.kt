@@ -64,7 +64,7 @@ class MainActivity : AppCompatActivity(), VideoClickEvent {
 
     fun fetchJson() {
 
-        val url = "https://www.googleapis.com/youtube/v3/videos?part=snippet%20&chart=mostPopular&maxResults=30&key=-AIzaSyA3ezZR79L8tRv_tgyowsGWl-Lr938P_BQ"
+        val url = "https://www.googleapis.com/youtube/v3/videos?part=snippet%20&chart=mostPopular&maxResults=30&key=-Apikey"
 
         val request  = Request.Builder().url(url).build()
 
