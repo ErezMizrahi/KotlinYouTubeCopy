@@ -1,4 +1,4 @@
-package com.erez8.youtubecopykotlin.Controller
+Epackage com.erez8.youtubecopykotlin.Controller
 
 import android.net.Uri
 import android.support.v7.app.AppCompatActivity
@@ -48,7 +48,7 @@ class PlayVideoActivity : YouTubeBaseActivity(), YouTubePlayer.OnInitializedList
         this.fetchJson(id)
 
         play_button.setOnClickListener {
-            youtube_player.initialize("AIzaSyA3ezZR79L8tRv_tgyowsGWl-Lr938P_BQ ",this)
+            youtube_player.initialize("Apikey ",this)
         }
     }
 
@@ -62,7 +62,7 @@ class PlayVideoActivity : YouTubeBaseActivity(), YouTubePlayer.OnInitializedList
     }
 
     fun fetchJson( id : String) {
-        val url = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&relatedToVideoId=$id&type=video&key=AIzaSyA3ezZR79L8tRv_tgyowsGWl-Lr938P_BQ"
+        val url = "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&relatedToVideoId=$id&type=video&key=APikey"
         print(id)
 
         val request = Request.Builder().url(url).build()
